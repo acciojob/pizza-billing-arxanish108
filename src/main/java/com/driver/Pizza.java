@@ -57,21 +57,21 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-       // if(!isBillCreated) {
-            if (!isExtraCheese) {
-                this.bill += "Extra Cheese Added: 80" + "\n";
-            }
-            if (!isExtraTopping) {
-                this.bill += "Extra Toppings Added: 70" + "\n";
-            }
-            if (!isTakeAway) {
-                this.bill += "Paperbag Added: 20" + "\n";
-            }
+        // if(!isBillCreated) {
+        if (!isExtraCheese) {
+            this.bill += "Extra Cheese Added: 80" + "\n";
+        }
+        if (!isExtraTopping) {
+            this.bill += "Extra Toppings Added: 70" + "\n";
+        }
+        if (!isTakeAway) {
+            this.bill += "Paperbag Added: 20" + "\n";
+        }
 
-            this.bill += "Total Price: " + this.price;
-            this.isBillCreated = true;
-            return this.bill;
+        this.bill += "Total Price: " + this.price;
+        this.isBillCreated = true;
+        return this.bill;
         //}
-       // return "";
+        // return "";
     }
 }
